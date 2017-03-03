@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,17 +21,18 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity android:name=".GoogleCalendarActivity">
         </activity>
         <activity android:name=".EasyPermissionActivity">
-
         </activity>
 
         <!-- Facebook ID -->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
+
+        <activity android:name=".realm.activity.BookActivity">
+        </activity>
     </application>
 
 </manifest>

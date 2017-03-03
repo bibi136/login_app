@@ -28,4 +28,10 @@
         android:layout_height="wrap_content"
         android:text="Easy Permission"
         android:id="@+id/btn_start_easy_permission"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Books list"
+        android:id="@+id/btn_book_list"/>
 </LinearLayout>

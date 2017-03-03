@@ -1,12 +1,12 @@
 package com.example.framgia.login_app;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-import com.facebook.AccessToken;
+import com.example.framgia.login_app.realm.activity.BookActivity;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -14,8 +14,6 @@ import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
-
-import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, GoogleCalendarActivity.class));
+            }
+        });
+        findViewById(R.id.btn_book_list).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BookActivity.class));
             }
         });
 
